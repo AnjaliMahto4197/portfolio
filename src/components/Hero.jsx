@@ -3,15 +3,10 @@ import Image from "../assets/Image.jpeg";
 
 export default function Hero() {
   return (
-    <section
-      id="home"
-      className="min-h-screen flex items-center px-6 md:px-20"
-    >
+    <section id="home" className="min-h-screen flex items-center px-6 md:px-20">
       <div className="grid md:grid-cols-2 gap-10 items-center w-full">
-
         {/* LEFT SIDE */}
         <div className="text-center md:text-left">
-
           {/* Heading */}
           <motion.h1
             initial={{ opacity: 0, y: 40 }}
@@ -30,9 +25,7 @@ export default function Hero() {
             className="text-3xl mt-4"
           >
             I love to{" "}
-            <span className="text-pink-300 font-semibold">
-              build & design
-            </span>
+            <span className="text-pink-300 font-semibold">build & design</span>
           </motion.h2>
 
           {/* Description */}
@@ -42,9 +35,9 @@ export default function Hero() {
             transition={{ delay: 0.6 }}
             className="mt-6 text-gray-400 max-w-md"
           >
-            React Developer with internship experience, building clean,
-            scalable and user-friendly web applications. Passionate about
-            solving real-world problems.
+            React Developer with internship experience, building clean, scalable
+            and user-friendly web applications. Passionate about solving
+            real-world problems.
           </motion.p>
         </div>
 
@@ -57,10 +50,9 @@ export default function Hero() {
           <img
             src={Image}
             alt="Anjali"
-            className="w-[300px] h-[300px] md:w-[350px] md:h-[350px] object-cover rounded-full border-4 border-white/20 shadow-xl hover:scale-105 transition duration-300"
+            className="w-[320px] h-[320px] md:w-[360px] md:h-[360px] object-cover object-top rounded-full border-4 border-white/20 shadow-xlhover:scale-105 transition duration-300"
           />
         </motion.div>
-
       </div>
     </section>
   );
